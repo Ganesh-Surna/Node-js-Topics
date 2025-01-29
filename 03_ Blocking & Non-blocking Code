@@ -1,0 +1,8 @@
+Blocking Code:
+  fs.writeFileSync('notes.txt', 'Hello World!')
+  -> Blocks next lines of code until it is completed.
+
+Non-Blocking Code:
+  fs.writeFile('notes.txt', 'Hello world!', (error)=>{
+      console.log(error)
+  })
