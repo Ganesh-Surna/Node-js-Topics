@@ -7,3 +7,13 @@ The Node uses single thread.
 
 To Exit from the loop : 
     process.exit()
+
+
+Event Loop:
+ -> handle all event callbacks
+ -> Executes:
+    1. Timers: setTimeOut, setInterval Callbacks
+    2. Pending Callbacks: I/O-related Callbacks that were deferred   (I/o -> Disk/file & Network operations ~Blocking Operations)
+    3. Poll: Retrieve new I/O events, execute their callbacks
+    4. Check: Execute setImmediate() callbacks
+    5. Close Callbacks: Execute all 'close' event callbacks
