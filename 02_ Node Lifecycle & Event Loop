@@ -2,3 +2,8 @@ node app.js ->
     start script ->
         Parse Code, Register Variables & Functions
               -> Event Loop (Keeps on running as long as there are event listners registered)
+
+The Node uses single thread.
+
+To Exit from the loop : 
+    process.exit()
