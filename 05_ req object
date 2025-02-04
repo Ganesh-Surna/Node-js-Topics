@@ -1,0 +1,3 @@
+req.body
+req.params.id  ------------> /products/:id
+req.query.category --------> /products?category="clothes"
